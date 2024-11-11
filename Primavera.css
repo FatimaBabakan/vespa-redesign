@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(font/Jost-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Jost;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 10px;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    color: #38a385;
+}
+
+header .logo {
+    display: inline-block;
+    width: 27%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header nav {
+    display: inline-block;
+    width: 42%;
+}
+
+header nav a {
+    padding: 5px 12px;
+    transition: .7s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+}
+
+header .icon {
+    display: inline-block;
+    width: 27%;
+    text-align: right;
+}
+
+header .icon a {
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .icon a:hover {
+    transform: scale(1.1);
+}
+
+main section.product {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+main section.product div.motorcycle {
+    width: 40%;
+    margin-right: 16px;
+    position: relative;
+}
+
+#second-motorcycle {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+main section.product div.motorcycle:hover #second-motorcycle {
+    visibility: visible;
+}
+
+main section.product div.caption-product {
+    width: 40%;
+    margin-left: 16px;
+}
+
+main section.product div.caption-product h1 {
+    color: #1E522F;
+    font-size: 35px;
+}
+
+main section.product div.caption-product p {
+    color: #5E8868;
+}
+
+main section.product div.caption-product div.model-product {
+    margin-top: 40px;
+}
+
+main section.product div.caption-product div.model-product span {
+    display: block;
+    color: #99B0A8;
+}
+
+main section.product div.caption-product div.model-product i {
+    color: #E62E1A;
+    padding: 2px;
+}
+
+main section.product div.caption-product div.model-product a:hover i {
+    border: .5px solid black;
+    border-radius: 50%;
+}
+
+main section.main-caption {
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+main section.main-caption div.top-main-caption {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #364B44;
+}
+
+main section.main-caption div.top-main-caption i {
+    font-size: 25px;
+    transition: .7s;
+}
+
+main section.main-caption div.top-main-caption i:hover {
+    color: #E62E1A;
+}
+
+main section.main-caption div.bottom-main-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+main section.main-caption div.bottom-main-caption img {
+    border-radius: 8px;
+}
+
+
+main section.main-caption div.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+main section.main-caption div.bottom-main-caption div.text-main-caption {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+main section.main-caption div.bottom-main-caption div.text-main-caption h3 {
+    font-size: 25px;
+    color: #DBEDDE;
+}
+
+
+main section.main-caption div.bottom-main-caption div.text-main-caption p {
+    color: white;
+    text-align: justify;
+}
+
+main section.main-caption div.bottom-main-caption div.text-main-caption a {
+    margin-top: 40px;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.479);
+    color: #006E54;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .7s;
+}
+
+main section.main-caption div.bottom-main-caption div.text-main-caption a:hover {
+    color: #38a385;
+    background-color: white;
+}
+
+#active-icon {
+    color: #E62E1A;
+}
+
+section.map {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+@keyframes vespa {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translate(-110%);
+    }
+}
+
+main div.vespa-move {
+    text-align: right;
+    animation-name: vespa;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    width: 100%;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+footer div.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer div.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer div.top-footer a {
+    display: block;
+}
+
+footer div.footer-icons {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer div.footer-icons a {
+    padding: 10px;
+    transition: .7s;
+}
+
+footer div.footer-icons a:hover {
+    color: #38a385;
+}
+
+footer div.bottom-footer {
+    text-align: center;
+    background-color: #5E8868;
+    padding: 15px;
+}

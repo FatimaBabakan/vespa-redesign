@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(font/Jost-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Jost;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 10px;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    color: #38a385;
+}
+
+header .logo {
+    display: inline-block;
+    width: 27%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header nav {
+    display: inline-block;
+    width: 42%;
+}
+
+header nav a {
+    padding: 5px 12px;
+    transition: .7s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+}
+
+header .icon {
+    display: inline-block;
+    width: 27%;
+    text-align: right;
+}
+
+header .icon a {
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .icon a:hover {
+    transform: scale(1.1);
+}
+
+main section.cover {
+    position: relative;
+    text-align: center;
+}
+
+main section.cover div.cover-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+main section.cover div.cover-caption h1 {
+    font-size: 70px;
+    color: #C9FCE9;
+}
+
+main section.discount {
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+main section.discount h2 {
+    color: #364B44;
+}
+
+main section.discount div.discount-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    height: 260px;
+    text-align: left;
+}
+
+main section.discount div.discount-item div.model {
+    width: 65%;
+}
+
+main section.discount div.discount-item div.caption {
+    width: 35%;
+    background-color: #C9FCE9;
+    height: 260px;
+    padding: 16px;
+    position: relative;
+}
+
+main section.discount div.discount-item div.caption span {
+    font-size: 12px;
+    color: #7B0B07;
+}
+
+main section.discount div.discount-item div.caption h3 {
+    font-size: 18px;
+    color: #1E522F;
+}
+
+main section.discount div.discount-item div.caption p {
+    font-size: 15px;
+    color: #5E8868;
+}
+
+main section.discount div.discount-item div.caption i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    padding: 16px;
+    transition: .7s;
+    color: #7B0B07;
+}
+
+main section.discount div.discount-item div.caption a:hover i {
+    transform: translateX(5px);
+}
+
+main section.plans {
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+}
+
+main section.plans div.caption-plans {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(16px);
+    padding: 24px;
+    border: 1px solid #1E522F;
+    border-radius: 8px;
+}
+
+main section.plans div.caption-plans h2 {
+    color: #1E522F;
+}
+
+main section.plans div.caption-plans h3 {
+    color: #359655;
+}
+
+main section.plans div.caption-plans p {
+    text-align: justify;
+    color: #ECFDF7;
+}
+
+main section.plans div.caption-plans a {
+    margin-top: 24px;
+    padding: 8px 16px;
+    border: 1px solid #38A385;
+    border-radius: 8px;
+    color: #38A385;
+    transition: .7s;
+}
+
+main section.plans div.caption-plans a:hover {
+    background-color: #ECFDF7;
+}
+
+main section.accesories {
+    background-color: #ECFDF7;
+    margin-top: 80px;
+}
+
+#accesories-title {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #364B44;
+}
+
+main section.accesories div.card-accesories {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section.accesories div.accesories-item {
+    background-color: white;
+    width: 20%;
+    height: 260px;
+    margin: 40px 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main section.accesories div.accesories-item div.image-accesories {
+    overflow: hidden;
+    transition: 1s;
+}
+
+main section.accesories div.accesories-item:hover div.image-accesories {
+    transform: scale(1.1);
+}
+
+main section.accesories div.accesories-item div.text-accesories h4 {
+    color: #5E8868;
+}
+
+main section.accesories div.accesories-item:hover div.text-accesories h4 {
+    color: #38a385;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+footer div.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer div.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer div.top-footer a {
+    display: block;
+}
+
+footer div.footer-icons {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer div.footer-icons a {
+    padding: 10px;
+    transition: .7s;
+}
+
+footer div.footer-icons a:hover{
+    color: #38a385;
+}
+
+footer div.bottom-footer {
+    text-align: center;
+    background-color: #5E8868;
+    padding: 15px;
+}
