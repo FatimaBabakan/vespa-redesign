@@ -14,3 +14,8 @@ This project is a custom HTML and CSS redesign of selected pages from the Vespa 
 1. Clone the repository:
    ```bash
    git clone https://github.com/FatimaBabakan/vespa-redesign.git
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Made with ❤️ by FatimaBabakan
